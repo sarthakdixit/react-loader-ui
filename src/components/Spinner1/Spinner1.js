@@ -20,7 +20,7 @@ export const Spinner1 = ({size, color1, width}) => {
     }
 
     return (
-        <div class="spinner1" style={styles}>
+        <div className="spinner1" style={styles}>
             <div style={styles1}></div>
             <div style={styles1}></div>
             <div style={styles1}></div>
