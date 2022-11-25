@@ -1,24 +1,20 @@
-.coin {
+.coin{
     display: inline-block;
-    transform: translateZ(1px);
-  }
-  .coin > div {
-    display: inline-block;
+}
+
+.coin div{
     border-radius: 50%;
-    animation: coin 2.5s cubic-bezier(0, 0.2, 0.8, 1) infinite;
-  }
-  @keyframes coin {
-    0%, 100% {
-      animation-timing-function: cubic-bezier(0.5, 0, 1, 0.5);
+    animation: spin 1.3s cubic-bezier(0.5, 0, 0.5, 1) infinite;
+}
+
+@keyframes spin{
+    0%{
+        transform: rotateY(0deg);
     }
-    0% {
-      transform: rotateY(0deg);
+    50%{
+        transform: rotateY(180deg);
     }
-    50% {
-      transform: rotateY(1800deg);
-      animation-timing-function: cubic-bezier(0, 0.5, 0.5, 1);
+    100%{
+        transform: rotateY(360deg);
     }
-    100% {
-      transform: rotateY(3600deg);
-    }
-  }
+}
