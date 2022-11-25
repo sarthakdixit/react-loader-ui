@@ -1,0 +1,17 @@
+.fan{
+    display: inline-block;
+    animation: fan 0.5s linear infinite;
+}
+
+.fan div{
+    display: inline-block;
+}
+
+@keyframes fan{
+    0%{
+        transform: rotate(0deg);
+    }
+    100%{
+        transform: rotate(360deg);
+    }
+}

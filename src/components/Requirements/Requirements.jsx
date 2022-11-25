@@ -1,6 +1,7 @@
 import { Default } from "../Default/Default";
 import { Spinner1 } from "../Spinner1/Spinner1";
 import { Coin } from "../Coin/Coin";
+import { Fan } from "../Fan/Fan";
 
 export const Requirements = ({name, size, color1, color2, color3, color4, width}) => {
     const type = typeof name === "string" ? name : "default";
@@ -12,6 +13,8 @@ export const Requirements = ({name, size, color1, color2, color3, color4, width}
             {type === "spinner1" ? <Spinner1 size={size} color1={color1} width={width} /> : null}
 
             {type === "coin" ? <Coin size={size} color1={color1} width={width} /> : null}
+
+            {type === "fan" ? <Fan size={size} color1={color1} /> : null}
         </>
     );
 }
