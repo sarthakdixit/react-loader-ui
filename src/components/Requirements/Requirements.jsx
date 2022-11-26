@@ -3,6 +3,7 @@ import { Spinner1 } from "../Spinner1/Spinner1";
 import { Coin } from "../Coin/Coin";
 import { Fan } from "../Fan/Fan";
 import { Circles } from "../Circles/Circles";
+import { Bounce } from "../Bounce/Bounce";
 
 export const Requirements = ({name, size, color1, color2, color3, color4, width}) => {
     const type = typeof name === "string" ? name : "default";
@@ -18,6 +19,8 @@ export const Requirements = ({name, size, color1, color2, color3, color4, width}
             {type === "fan" ? <Fan size={size} color1={color1} /> : null}
 
             {type === "circles" ? <Circles size={size} color1={color1} /> : null}
+
+            {type === "bounce" ? <Bounce size={size} color1={color1} /> : null}
         </>
     );
 }
