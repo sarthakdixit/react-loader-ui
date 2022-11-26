@@ -1,0 +1,19 @@
+.spinner2{
+    border-radius: 50%;
+    animation: spinner2 3s linear infinite;
+}
+
+.spinner2 div{
+    position: absolute;
+    border-radius: 50%;
+    animation: spinner2 2s linear infinite;
+}
+
+@keyframes spinner2{
+    0%{
+        transform: rotate(0deg);
+    }
+    100%{
+        transform: rotate(360deg);
+    }
+}
