@@ -1,0 +1,47 @@
+  .circles div {
+    position: absolute;
+    border-radius: 50%;
+  }
+  .circles div:nth-child(1) {
+    animation: circles 1s infinite;
+    animation-delay: -0.1s;
+    -webkit-animation: circles 1s infinite;
+    -webkit-animation-delay: -0.1s;
+  }
+  .circles div:nth-child(2) {
+    animation: circles 1s infinite;
+    animation-delay: -0.3s;
+    -webkit-animation: circles 1s infinite;
+    -webkit-animation-delay: -0.3s;
+  }
+  .circles div:nth-child(3) {
+    animation: circles 1s infinite;
+    animation-delay: -0.5s;
+    -webkit-animation: circles 1s infinite;
+    -webkit-animation-delay: -0.5s;
+  }
+  .circles div:nth-child(4) {
+    animation: circles 1s infinite;
+    animation-delay: -0.7s;
+    -webkit-animation: circles 1s infinite;
+    -webkit-animation-delay: -0.7s;
+  }
+
+  @-webkit-keyframes circles{
+    0% {
+        transform: scale(0);
+      }
+      100% {
+        transform: scale(1);
+      }
+  }
+
+  @keyframes circles {
+    0% {
+      transform: scale(0);
+    }
+    100% {
+      transform: scale(1);
+    }
+  }
+  
