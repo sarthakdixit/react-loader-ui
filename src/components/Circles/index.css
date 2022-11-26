@@ -1,5 +1,11 @@
+  .circles{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+  }
+  
   .circles div {
-    position: absolute;
     border-radius: 50%;
   }
   .circles div:nth-child(1) {

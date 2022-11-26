@@ -9,36 +9,21 @@ export const Circles = ({size, color1}) => {
         width:`${realSize}px`, 
         height:`${realSize}px`,
         backgroundColor:`${realColor1}`,
-        left : `${0.8*realSize}px`
     }
 
     const styles2 = {
         width:`${realSize}px`, 
         height:`${realSize}px`,
         backgroundColor:`${realColor1}`,
-        left : `${0.8*realSize*3}px`
-    }
-
-    const styles3 = {
-        width:`${realSize}px`, 
-        height:`${realSize}px`,
-        backgroundColor:`${realColor1}`,
-        left : `${0.8*realSize*5}px`
-    }
-
-    const styles4 = {
-        width:`${realSize}px`, 
-        height:`${realSize}px`,
-        backgroundColor:`${realColor1}`,
-        left : `${0.8*realSize*7}px`
+        marginLeft : `${0.8*realSize}px`
     }
 
     return (
-        <div className="circles">
+        <div className="circles" style={{width:`${realSize*7}px`}}>
             <div style={styles1}></div>
             <div style={styles2}></div>
-            <div style={styles3}></div>
-            <div style={styles4}></div>
+            <div style={styles2}></div>
+            <div style={styles2}></div>
         </div>
     )
 }
