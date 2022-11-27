@@ -7,6 +7,7 @@ import { Fan } from "../Fan/Fan";
 import { Circles } from "../Circles/Circles";
 import { Bounce } from "../Bounce/Bounce";
 import { FlipBox } from "../FlipBox/FlipBox";
+import { Floors } from "../Floors/Floors";
 
 export const Requirements = ({name, size, color1, color2, color3, color4, width}) => {
     const type = typeof name === "string" ? name : "default";
@@ -28,6 +29,8 @@ export const Requirements = ({name, size, color1, color2, color3, color4, width}
             {type === "bounce" ? <Bounce size={size} color1={color1} /> : null}
 
             {type === "flipbox" ? <FlipBox size={size} color1={color1} /> : null}
+
+            {type === "floors" ? <Floors size={size} color1={color1} color2={color2} /> : null}
         </>
     );
 }

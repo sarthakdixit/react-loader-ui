@@ -1,0 +1,22 @@
+.floors{
+    transform: rotateX(65deg) rotate(45deg);
+    animation: floors 0.7s infinite alternate;
+}
+
+@-webkit-keyframes floors{
+    0%{
+        box-shadow: 0px;
+    }
+    90%, 100%{
+        box-shadow: 20px 20px 0px -4px;
+    }
+}
+
+@keyframes floors{
+    0%{
+        box-shadow: 0px;
+    }
+    90%, 100%{
+        box-shadow: 20px 20px 0px -4px;
+    }
+}
