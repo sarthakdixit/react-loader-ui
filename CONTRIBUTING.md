@@ -50,7 +50,7 @@ git pull
 ```
 This command will pull latest data from git.
 
-## Add/Update Loaders
+## Add Loaders
 
 1) First we need to intall dependencies. Open terminal in your project folder. And run command
 ```
@@ -68,8 +68,10 @@ git checkout -b spinner-ui
 ```
 Please create your new branch name as same as your new loader name but in small letters. And add '-ui' as suffix.
 
-3) If you want to add new loaders than create a new folder with new loader name in ./src/components
+3) If you want to add new loaders than create a new folder with new loader name in ./src/components.
+
 Add files, like index.css and [folder_name].js
+
 [folder_name].js should have a syntax like.
 ```
 export const folder_name = () => {}
@@ -77,19 +79,58 @@ export const folder_name = () => {}
 Take a look at other loaders for help.
 
 4) After adding new loader, import that loader in ./src/components/Requirements/Requirements.js
+
 In return function in Requirement.js file type a condition like
 ```
 {type === "folder_name" ? <NewLoaderComponent ...props /> : null}
 ```
 folder_name should be small letters, no spaces, no special characters.
+
 NewLoaderComponent is the component which you just imported.
+
 ...props, are all the props needed for NewLoaderComponent.
 
 There are various props already in Requirements.js, but if you want to add new props than feel free to add them.
 
 5) To check your new loader go to ./src/stories/Requirements.stories.js
+
 Update the name of your loader, remember it is in all small letters, no spaces, no special character.
+
 After updating Requirements.stories.js file, open your terminal in your project folder, and run command.
 ```
 npm run storybook
 ```
+
+## Commit Changes
+
+If you go to the project directory and execute the command `git status`, you'll see there are changes.
+
+Add those changes to the branch you just created using the `git add` command:
+
+```
+git add .
+```
+
+Now commit those changes using the `git commit` command:
+
+```
+git commit -m "new-loader-name-ui"
+```
+
+## Push changes to GitHub
+
+Push your changes using the command `git push`:
+
+```
+git push -u origin your-branch-name
+```
+
+replacing `your-branch-name` with the name of the branch you created earlier.
+
+## Submit your changes for review
+
+If you go to your repository on GitHub, you'll see a `Compare & pull request` button. Click on that button.
+
+Now submit the pull request.
+
+Soon I'll be merging all your changes into the main branch of this project. You will get a notification email once the changes have been merged.
