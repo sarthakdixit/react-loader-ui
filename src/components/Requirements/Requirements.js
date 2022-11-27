@@ -1,3 +1,4 @@
+import React from "react";
 import { Default } from "../Default/Default";
 import { Spinner1 } from "../Spinner1/Spinner1";
 import { Spinner2 } from "../Spinner2/Spinner2";
