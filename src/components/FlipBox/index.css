@@ -1,0 +1,30 @@
+.flip-box{
+    border-radius: 10%;
+    animation: flipbox 1.3s linear infinite;
+    -webkit-animation: flipbox 1.3s linear infinite;
+}
+
+@-webkit-keyframes flipbox{
+    0%{
+        -webkit-transform: rotateX(0deg) rotateY(0deg);
+    }
+    50%{
+        -webkit-transform: rotateX(0deg) rotateY(-180deg);
+    }
+    100%{
+        -webkit-transform: rotateX(-180deg) rotateY(-180deg);
+    }
+}
+
+@keyframes flipbox{
+    0%{
+        transform: rotateX(0deg) rotateY(0deg);
+    }
+    50%{
+        transform: rotateX(0deg) rotateY(-180deg);
+    }
+    100%{
+        transform: rotateX(-180deg) rotateY(-180deg);
+    }
+}
+      
