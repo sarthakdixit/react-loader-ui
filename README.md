@@ -1,5 +1,14 @@
 # react-loader-ui
 
+![Node.js Package](https://github.com/sarthakdixit/react-loader-ui/workflows/Node.js%20Package/badge.svg?branch=master)
+![release](https://badgen.net/github/release/sarthakdixit/react-loader-ui)
+![tag](https://badgen.net/github/tag/sarthakdixit/react-loader-ui)
+![stars](https://badgen.net/github/stars/sarthakdixit/react-loader-ui)
+![issue](https://badgen.net/github/issues/sarthakdixit/react-loader-ui)
+![open-issues](https://badgen.net/github/open-issues/sarthakdixit/react-loader-ui)
+![commits](https://badgen.net/github/commits/sarthakdixit/react-loader-ui)
+![commits](https://badgen.net/github/assets-dl/sarthakdixit/react-loader-ui)
+
 ### Installation:
 
 ```bash
