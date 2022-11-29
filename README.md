@@ -1,5 +1,11 @@
 # react-loader-ui
 
+![stars](https://badgen.net/github/stars/sarthakdixit/react-loader-ui)
+![issue](https://badgen.net/github/issues/sarthakdixit/react-loader-ui)
+![open-issues](https://badgen.net/github/open-issues/sarthakdixit/react-loader-ui)
+
+## Package is [here](https://www.npmjs.com/package/react-loader-ui)
+
 ### Installation:
 
 ```bash
