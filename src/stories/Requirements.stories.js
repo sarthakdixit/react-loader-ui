@@ -5,5 +5,5 @@ import { Requirements } from '../components/Requirements/Requirements';
 const stories = storiesOf("App Test", module);
 
 stories.add("App", () => {
-    return (<Requirements name="default" />)
+    return (<Requirements name="square" />)
 })
