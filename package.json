@@ -1,6 +1,6 @@
 {
   "name": "react-loader-ui",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "A simple react component that consist of multiple loaders/spinners.",
   "main": "index.js",
   "scripts": {
