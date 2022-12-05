@@ -1,0 +1,21 @@
+.lines{
+    display: inline-block;
+  position: relative;
+  border-radius: 4px;
+  box-sizing: border-box;
+  animation: lines-fade-in 2s linear infinite;
+}
+
+.lines:nth-child(2){
+    animation-delay: -0.25s;
+}
+
+.lines:nth-child(3){
+    animation-delay: -0.5s;
+}
+
+@keyframes lines-fade-in {
+    0% { opacity: 0.25; }
+    50% { opacity: 0.7; }
+    100% { opacity: 0.25; }
+}

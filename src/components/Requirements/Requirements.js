@@ -9,6 +9,7 @@ import { Bounce } from "../Bounce/Bounce";
 import { FlipBox } from "../FlipBox/FlipBox";
 import { Floors } from "../Floors/Floors";
 import {Square} from "../Square/Square";
+import { Lines } from "../Lines/Lines";
 
 export const Requirements = ({name, size, color1, color2, color3, color4, width}) => {
     const type = typeof name === "string" ? name : "default";
@@ -34,6 +35,8 @@ export const Requirements = ({name, size, color1, color2, color3, color4, width}
             {type === "floors" ? <Floors size={size} color1={color1} color2={color2} /> : null}
 
             {type === "square" ? <Square size={size} color1={color1} color2={color2} /> : null}
+
+            {type === "lines" ? <Lines size={size} color1={color1} /> : null}
         </>
     );
 }
