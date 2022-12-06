@@ -37,7 +37,7 @@ export const Requirements = ({name, size, color1, color2, color3, color4, width}
 
             {type === "square" ? <Square size={size} color1={color1} color2={color2} /> : null}
 
-            {type === "lines" ? <Lines size={size} color1={color1} /> : null}
+            {type === "lines" ? <Lines size={size} color1={color1} width={width} /> : null}
 
             {type === "wifi" ? <WiFi size={size} color1={color1} /> : null}
         </>
