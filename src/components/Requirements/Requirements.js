@@ -10,6 +10,7 @@ import { FlipBox } from "../FlipBox/FlipBox";
 import { Floors } from "../Floors/Floors";
 import {Square} from "../Square/Square";
 import { Lines } from "../Lines/Lines";
+import { WiFi } from "../WiFi/WiFi";
 
 export const Requirements = ({name, size, color1, color2, color3, color4, width}) => {
     const type = typeof name === "string" ? name : "default";
@@ -37,6 +38,8 @@ export const Requirements = ({name, size, color1, color2, color3, color4, width}
             {type === "square" ? <Square size={size} color1={color1} color2={color2} /> : null}
 
             {type === "lines" ? <Lines size={size} color1={color1} /> : null}
+
+            {type === "wifi" ? <WiFi size={size} color1={color1} /> : null}
         </>
     );
 }
