@@ -12,6 +12,7 @@ import {Square} from "../Square/Square";
 import { Lines } from "../Lines/Lines";
 import { WiFi } from "../WiFi/WiFi";
 import { Heart } from "../Heart/Heart";
+import { MusicBars } from "../MusicBars/MusicBars";
 
 export const Requirements = ({name, size, color1, color2, color3, color4, width}) => {
     const type = typeof name === "string" ? name : "default";
@@ -43,6 +44,8 @@ export const Requirements = ({name, size, color1, color2, color3, color4, width}
             {type === "wifi" ? <WiFi size={size} color1={color1} /> : null}
 
             {type === "heart" ? <Heart size={size} color1={color1} /> : null}
+
+            {type === "musicbars" ? <MusicBars size={size} color1={color1} /> : null}
         </>
     );
 }
