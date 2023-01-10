@@ -13,6 +13,7 @@ import { Lines } from "../Lines/Lines";
 import { WiFi } from "../WiFi/WiFi";
 import { Heart } from "../Heart/Heart";
 import { MusicBars } from "../MusicBars/MusicBars";
+import { HandWave } from "../HandWave/HandWave";
 
 export const Requirements = ({name, size, color1, color2, color3, color4, width}) => {
     const type = typeof name === "string" ? name : "default";
@@ -46,6 +47,8 @@ export const Requirements = ({name, size, color1, color2, color3, color4, width}
             {type === "heart" ? <Heart size={size} color1={color1} /> : null}
 
             {type === "musicbars" ? <MusicBars size={size} color1={color1} /> : null}
+
+            {type === "handwave" ? <HandWave size={size} color1={color1} /> : null}
         </>
     );
 }
