@@ -1,9 +1,9 @@
-import React from 'react';
-import {storiesOf} from "@storybook/react";
-import { Requirements } from '../components/Requirements/Requirements';
+import React from "react";
+import { storiesOf } from "@storybook/react";
+import { Requirements } from "../components/Requirements/Requirements";
 
 const stories = storiesOf("App Test", module);
 
 stories.add("App", () => {
-    return (<Requirements name="handwave" />)
-})
+  return <Requirements name="seesaw" />;
+});
